@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  jupyter:
+    container_name: jupyter_container
+    image: jupyter/minimal-notebook
+    # environment:
+    #   POSTGRES_USER: ${POSTGRES_USER:-postgres}
+    #   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-docker}
+    #   PGDATA: /data/postgres
+    volumes:
+       - /Users/jpham/Projects/stock-analysis:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    # networks:
+    #   - postgres

@@ -1,0 +1,11 @@
+# print attributes
+dir(object)
+
+# Get type
+type(msft.financials)
+
+# Yfinance are pandas dataframes
+
+# Jupyter notebook install stuff
+import sys
+!{sys.executable} -m pip install yfinance
